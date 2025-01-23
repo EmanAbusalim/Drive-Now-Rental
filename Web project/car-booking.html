@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Booking Form</title>
+  <link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>DriveNow Rentals</h1>
+    <nav>
+      <a href="/">Home</a>|
+      <a href="/about">Gallery</a>|
+      <a href="/rentals">Booking</a>|
+      <a href="contact us.html">Contact us</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Car Booking Form</h2>
+    <form action="Thankyou.html" method="POST">
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" name="pickup-date" required>
+      </div>
+      <div class="form-group">
+        <label for="dropoff-date">Drop-off Date:</label>
+        <input type="date" id="dropoff-date" name="dropoff-date" required>
+      </div>
+      <div class="form-group">
+        <label for="car-type">Car Type:</label>
+        <select id="car-type" name="car-type" required>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additional-requests">Additional Requests:</label>
+        <textarea id="additional-requests" name="additional-requests" rows="4"></textarea>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 DriveNow Rentals. All rights reserved.</p>
+  </footer>
+</body>
+</html>
